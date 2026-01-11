@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,129 +14,175 @@
             margin: 0;
             padding: 0;
         }
+
         .container {
             max-width: 900px;
             margin: auto;
             padding: 32px 20px;
             background: #ffffff;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            margin-top: 40px;
+            margin-bottom: 40px;
+            border-radius: 8px;
         }
-        h1, h2 {
+
+        h1,
+        h2,
+        h3 {
             color: #111827;
         }
+
         h1 {
             margin-bottom: 8px;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 12px;
         }
+
         h2 {
             margin-top: 28px;
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 8px;
         }
+
+        h3 {
+            margin-top: 20px;
+            font-size: 1.1em;
+        }
+
         p {
             margin: 12px 0;
         }
+
         ul {
             margin: 12px 0 12px 20px;
         }
+
+        li {
+            margin-bottom: 8px;
+        }
+
         footer {
             text-align: center;
-            padding: 16px;
+            padding: 24px;
             font-size: 14px;
             color: #6b7280;
         }
+
+        strong {
+            color: #111827;
+        }
     </style>
 </head>
+
 <body>
 
-<div class="container">
-    <h1>Privacy Policy for Weathra</h1>
-    <p><strong>Last Updated:</strong> December 26, 2025</p>
+    <div class="container">
+        <h1>Privacy Policy for Weathra</h1>
+        <p><strong>Last Updated:</strong> January 11, 2026</p>
 
-    <p>
-        Weathra ("we", "our", or "us") is committed to protecting your privacy.
-        This Privacy Policy explains how information is collected, used, and safeguarded
-        when you use the Weathra mobile application.
-    </p>
+        <p>
+            Weathra ("we", "our", or "us") is committed to protecting your privacy.
+            This Privacy Policy explains how information is collected, used, and safeguarded
+            when you use the Weathra mobile application.
+        </p>
 
-    <h2>1. Information We Collect</h2>
+        <h2>1. Information We Collect</h2>
 
-    <h3>A. Location Information</h3>
-    <p>
-        To provide accurate local weather forecasts and city-level information,
-        Weathra may request access to your device’s location (fine or coarse location).
-    </p>
-    <ul>
-        <li><strong>Automatic Collection:</strong> Latitude and longitude when permission is granted</li>
-        <li><strong>Purpose:</strong> Used only to display weather information relevant to your area</li>
-    </ul>
+        <h3>A. Location Information</h3>
+        <p>
+            To provide accurate local weather forecasts and city-level information,
+            Weathra may request access to your device’s location (fine or coarse location).
+        </p>
+        <ul>
+            <li><strong>Automatic Collection:</strong> Latitude and longitude when permission is granted.</li>
+            <li><strong>Purpose:</strong> Used only to display weather information relevant to your area and city
+                identification.</li>
+        </ul>
 
-    <h3>B. Search Queries</h3>
-    <p>
-        When you search for a city or location in the app, your search query is processed
-        to return relevant weather results.
-    </p>
+        <h3>B. Search Queries</h3>
+        <p>
+            When you search for a city or location in the app, your search query is processed
+            to return relevant weather results.
+        </p>
 
-    <h3>C. No Personal Identification</h3>
-    <p>
-        Weathra does <strong>not</strong> collect or store personally identifiable information,
-        including name, email address, phone number, contacts, or account credentials.
-        The app does not require user registration.
-    </p>
+        <h3>C. No Personal Identification</h3>
+        <p>
+            Weathra does <strong>not</strong> collect or store personally identifiable information,
+            including name, email address, phone number, contacts, or account credentials.
+            The app does not require user registration.
+        </p>
 
-    <h2>2. How We Use Information</h2>
-    <ul>
-        <li>Display weather forecasts and conditions</li>
-        <li>Provide location-based results</li>
-        <li>Improve performance using temporary local caching</li>
-        <li>Reduce unnecessary network requests</li>
-    </ul>
+        <h2>2. How We Use Information</h2>
+        <ul>
+            <li>Display weather forecasts and conditions.</li>
+            <li>Provide location-based results and reverse geocoding.</li>
+            <li>Improve performance using temporary local caching.</li>
+            <li>Reduce unnecessary network requests.</li>
+            <li>Monitor app stability and analytics for service improvement.</li>
+        </ul>
 
-    <h2>3. Data Storage and Retention</h2>
-    <ul>
-        <li><strong>Local Caching:</strong> Data may be stored temporarily on your device (typically up to 10 minutes)</li>
-        <li><strong>No Server-Side Storage:</strong> We do not store location or search history on our servers</li>
-        <li><strong>No Tracking:</strong> Users are not tracked across apps or websites</li>
-    </ul>
+        <h2>3. Data Storage and Retention</h2>
+        <ul>
+            <li><strong>Local Caching:</strong> Data may be stored temporarily on your device (typically up to 10
+                minutes) using local storage (SharedPreferences).</li>
+            <li><strong>No Server-Side Storage:</strong> We do not store location or search history on our own servers.
+            </li>
+            <li><strong>No Tracking:</strong> Users are not tracked across unrelated apps or websites, except as
+                described in the Third-Party Services section.</li>
+        </ul>
 
-    <h2>4. Third-Party Services</h2>
-    <p>
-        Weathra uses external APIs to provide weather forecasts and location-based search functionality.
-        These services receive only the minimum data required to process your request.
-    </p>
-    <p>
-        Weathra does not control how third-party services handle data.
-        Users are encouraged to review their respective privacy policies.
-    </p>
+        <h2>4. Third-Party Services</h2>
+        <p>
+            Weathra utilizes third-party SDKs and APIs to provide and improve its services:
+        </p>
+        <ul>
+            <li><strong>Weather Data & Geocoding:</strong> Provided by external APIs (e.g., Photon, DuckDNS). These
+                services receive your coordinates or search queries to fulfill your requests.</li>
+            <li><strong>Firebase SDK (Google Analytics):</strong> To understand app usage and improve user experience.
+                This includes anonymized data about how users interact with the app.</li>
+            <li><strong>Firebase Crashlytics:</strong> To monitor app stability and fix crashes. This collects technical
+                data like device models and OS versions when a crash occurs.</li>
+            <li><strong>Ads SDK:</strong> To serve advertisements. These SDKs may collect data such as device
+                identifiers and advertising IDs to provide personalized advertisements and track ad performance.</li>
+        </ul>
+        <p>
+            Weathra does not control how third-party services handle data.
+            Users are encouraged to review their respective privacy policies.
+        </p>
 
-    <h2>5. Permissions</h2>
-    <p>
-        Weathra may request location access to show weather for your current location.
-        You can enable or disable permissions at any time via your device settings.
-        Disabling permissions may limit certain features.
-    </p>
+        <h2>5. Permissions</h2>
+        <p>
+            Weathra may request location access to show weather for your current location.
+            You can enable or disable permissions at any time via your device settings.
+            Disabling permissions may limit certain features.
+        </p>
 
-    <h2>6. Children’s Privacy</h2>
-    <p>
-        Weathra does not knowingly collect personal information from children under the age of 13.
-        If you believe a child has provided personal information, please contact us.
-    </p>
+        <h2>6. Children’s Privacy</h2>
+        <p>
+            Weathra does not knowingly collect personal information from children under the age of 13.
+            If you believe a child has provided personal information, please contact us.
+        </p>
 
-    <h2>7. Changes to This Privacy Policy</h2>
-    <p>
-        This Privacy Policy may be updated periodically.
-        Any changes will be posted on this page with an updated revision date.
-        Continued use of the app constitutes acceptance of the revised policy.
-    </p>
+        <h2>7. Changes to This Privacy Policy</h2>
+        <p>
+            This Privacy Policy may be updated periodically.
+            Any changes will be posted on this page with an updated revision date.
+            Continued use of the app constitutes acceptance of the revised policy.
+        </p>
 
-    <h2>8. Contact Us</h2>
-    <p>
-        If you have any questions or concerns about this Privacy Policy, you can contact us at:
-    </p>
-    <p>
-        <strong>Email:</strong>apkapps108@gmail.com
-    </p>
-</div>
+        <h2>8. Contact Us</h2>
+        <p>
+            If you have any questions or concerns about this Privacy Policy, you can contact us at:
+        </p>
+        <p>
+            <strong>Email:</strong> apkapps108@gmail.com
+        </p>
+    </div>
 
-<footer>
-    © 2025 Weathra. All rights reserved.
-</footer>
+    <footer>
+        © 2026 Weathra. All rights reserved.
+    </footer>
 
 </body>
+
 </html>
